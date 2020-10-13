@@ -25,7 +25,7 @@ public class Main {
         int counter = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] % 2 == 1) {
-                counter++;
+                counter++
             }
         }
         return counter;
@@ -40,7 +40,7 @@ public class Main {
         }
         return counter;
     }
-    
+
     public static int sumOfOddNumbers(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
@@ -48,6 +48,16 @@ public class Main {
                 sum += array[i];
             }
         }
+        return sum;
+    }
+    public static int sumEvenNums(int[] nums) {
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                sum += nums[i];
+            }
+        }
+
         return sum;
     }
 
