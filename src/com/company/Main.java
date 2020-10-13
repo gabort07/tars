@@ -8,5 +8,17 @@ public class Main {
         for (int i = 0; i < randomArray.length; i++) {
             randomArray[i] = (int) (Math.random() *100 + 1);
         }
+        System.out.println(maxOfArrey(randomArray));
+    }
+    public static int maxOfArrey(int[] nums) {
+        int max = nums[nums.length - 1];
+        for (int i = 0; i < nums.length; i++) {
+
+            if (nums[i] > max) {
+
+                max = nums[i];
+            }
+        }
+        return max;
     }
 }
